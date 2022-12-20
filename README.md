@@ -1,1 +1,1 @@
-# rock-paper-scissors_js
+In this repository, i will write a basic script to make a rock,paper, scissor game. It is an assignment in my web development course constructed by  "The odin project" community.

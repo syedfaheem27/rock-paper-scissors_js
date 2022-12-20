@@ -50,3 +50,6 @@ function playRound(playerSelection,computerSelection){
     }
 }
     
+let playerChoice=getUserChoice();
+    let computerChoice=getComputerChoice();
+    playRound(playerChoice,computerChoice);

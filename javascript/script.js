@@ -20,3 +20,33 @@ function getUserChoice() {
     let str_user=str.toUpperCase();
     return str_user;
 }
+function playRound(playerSelection,computerSelection){
+    if(computerSelection=="ROCK"&&playerSelection=="ROCK"){
+        console.log("It's a tie as both selections are ROCK");
+    }
+    else if (computerSelection=="ROCK"&&playerSelection=="SCISSOR"){
+        console.log("Computer wins. Rock breaks SCISSOR");
+    }
+    else if(computerSelection=="ROCK"&&playerSelection=="PAPER"){
+        console.log("You win. PAPER wraps ROCK");
+    }
+    else if(computerSelection=="PAPER"&&playerSelection=="ROCK"){
+        console.log("Computer wins. PAPER wraps ROCK");
+    }
+    else if(computerSelection=="PAPER"&&playerSelection=="PAPER"){
+        console.log("It's a tie as both selections are PAPER");
+    }
+    else if (computerSelection=="PAPER"&&playerSelection=="SCISSOR"){
+        console.log("You win. SCISSOR cuts PAPER");
+    }
+    else if(computerSelection=="SCISSOR"&&playerSelection=="ROCK"){
+        console.log("You win. ROCK breaks SCISSOR");
+    }
+    else if(computerSelection=="SCISSOR"&&playerSelection=="PAPER"){
+        console.log("Computer wins. SCISSOR cuts PAPER");
+    }
+    else {
+        console.log("It's a tie as both slections are SCISSOR");
+    }
+}
+    

@@ -15,3 +15,8 @@ function getComputerChoice() {
         return "SCISSOR" ;
     }
 }
+function getUserChoice() {
+    let str=prompt("Rock,Paper or Scissor-Enter your choice.");
+    let str_user=str.toUpperCase();
+    return str_user;
+}

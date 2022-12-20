@@ -78,16 +78,18 @@ function playRound(playerSelection,computerSelection){
 }
 function game(){
     let comp_score=0,user_score=0,n,playerChoice,computerChoice;
-    for(let i=0;comp_score!=5||user_score!=5;i++){
+    for(let i=0;comp_score!=5&&user_score!=5;i++){
      playerChoice=getUserChoice();
      computerChoice=getComputerChoice();
      n = playRound(playerChoice,computerChoice);
      if(n=='c'){
         comp_score=comp_score+1;
-     }
+             }
      else if(n=='u'){
         user_score=user_score+1;
-     }
+             }
+     console.log(comp_score);
+     console.log(user_score);
     }
     if(comp_score==5){
         console.log("The computer wins the first five rounds.");

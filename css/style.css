@@ -16,13 +16,18 @@ div {
 
 }
 button {
-    padding: 16px;
+    padding: 12px;
     border-radius: 6px;
     background-color: rgba(255, 255, 0, 0.383);
     color: red;
+    min-width: 20px;
+    min-height: 12px;
 }
 button:hover {
     transform: scale(1.3);
     background-color: rgba(0, 0, 255, 0.631);
     color: beige;
+}
+.click {
+    display: none;
 }

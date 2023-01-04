@@ -31,6 +31,7 @@ btn.addEventListener('click', (e) => {
         let user_choice=e.target.dataset.id,
         comp_choice=Math.floor(Math.random()*3);//0-rock,1-paper,2-scissor
         playRound(user_choice,comp_choice);
+        check(user_choice,comp_choice);
     });
     function playRound(u,c) {
         result.textContent=" ";
@@ -89,4 +90,36 @@ btn.addEventListener('click', (e) => {
             }
         }
     }  
-    
+    function check(score_user,score_comp) {
+        if(score_user<5&&score_comp<5){
+            return ;
+        }
+        else {
+            if(score_comp==5){
+                result.textContent="The computer wins the first five rounds."
+                btn_rock.classList.add('click');
+                btn_paper.classList.add('click');
+                btn_scissor.classList.add('click');
+                const btn_refresh=document.createElement('button');
+                btn_refresh.textContent="Play again"
+                document.querySelector('body')
+                .appendChild(btn_refresh);
+                btn_refresh.onclick=()=> {
+                    window.location.reload();
+                }
+            }
+            else {
+                result.textContent="You win the first five rounds."
+                btn_rock.classList.add('click');
+                btn_paper.classList.add('click');
+                btn_scissor.classList.add('click');
+                const btn_refresh=document.createElement('button');
+                btn_refresh.textContent="Play again"
+                document.querySelector('body')
+                .appendChild(btn_refresh);
+                btn_refresh.onclick=()=> {
+                    window.location.reload();
+                }
+            }
+        }
+    }

@@ -1,11 +1,10 @@
 html {
-    background-image: url("/rrrr.jpg");
-    background-size: cover;
+   background-color: black;
     text-align: center;
 }
 h1 {
     font-size: 40px;
-    color: black;
+    color: whitesmoke;
     
 }
 div {
@@ -13,12 +12,11 @@ div {
     color: orange;
     font-weight: bold;
     margin: 20px 0;
-
 }
 button {
     padding: 20px;
     border-radius: 6px;
-    background-color: rgba(255, 255, 0, 0.383);
+    background-color: gold;
     color: red;
     min-width: 40px;
     min-height: 30px;
@@ -31,9 +29,10 @@ button:hover {
 .click {
     display: none;
 }
-.game {
+.box {
     display: flex;
     gap: 16px;
     justify-content: center;
 
 }
+

@@ -31,7 +31,7 @@ btn.addEventListener('click', (e) => {
         let user_choice=e.target.dataset.id,
         comp_choice=Math.floor(Math.random()*3);//0-rock,1-paper,2-scissor
         playRound(user_choice,comp_choice);
-        check(user_choice,comp_choice);
+        check(score_user,score_comp);
     });
     function playRound(u,c) {
         result.textContent=" ";
